@@ -43,7 +43,7 @@ if ((digitalRead(pinbutton) == LOW) and (apasat == 0)) // if button is pushed
   delay(delaytime);
 }
 
-if ((digitalRead(pinbutton) == HIGH) and (apasat == 1)) // if button is pushed
+if ((digitalRead(pinbutton) == HIGH) and (apasat == 1)) // if button is released
 {
   Serial.println("Buton is released !");
   digitalWrite(pinled, LOW); // led off
